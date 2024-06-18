@@ -2,15 +2,15 @@ import { Link } from "react-router-dom";
 
 const Login = () => {
   return (
-    <div className="flex flex-col items-center min-w-96 mx-auto">
-      <div className="w-full p-6 rounded-lg shadow-md bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-0">
-        <h1 className="text-3xl font-semibold text-center text-gray-300">
-          Login <span className="text-blue-900">Talky</span>
+    <div className="flex flex-col bg-white rounded-lg items-center min-w-96 mx-auto">
+      <div className="w-full p-6 rounded-lg shadow-md bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-0">
+        <h1 className="text-3xl font-semibold text-center text-darkOrange">
+          Login <span className="text-sky-500">Talky</span>
         </h1>
         <form action="">
           <div>
             <label className="label p-2">
-              <span className="text-base label-text">Username</span>
+              <span className="text-base text-black label-text">Username</span>
             </label>
             <input
               type="text"
@@ -20,7 +20,7 @@ const Login = () => {
           </div>
           <div>
             <label className="label">
-              <span className="text-base label-text">Password</span>
+              <span className="text-base text-black label-text">Password</span>
             </label>
             <input
               type="password"
@@ -31,13 +31,15 @@ const Login = () => {
 
           <Link
             to="/signup"
-            className="text-sm hover:underline hover:text-blue-600 mt-2 inline-block"
+            className="text-sm text-gray-500 hover:underline hover:text-lightOrange mt-2 inline-block"
           >
             {"Don't have an account? Sign Up"}
           </Link>
 
           <div className="flex flex-col items-center">
-            <button className="btn btn-sm mt-2">Login</button>
+            <button className="btn btn-sm mt-2 border border-slate-700">
+              Login
+            </button>
           </div>
         </form>
       </div>

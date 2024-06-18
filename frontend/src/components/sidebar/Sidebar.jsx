@@ -5,12 +5,13 @@ import logoImage from "./Logo.png";
 
 const Sidebar = () => {
   return (
-    <div className="border-r border-slate-500 p-4 flex flex-col">
+    <div className="border-r bg-white border-slate-500 p-4 flex flex-col">
       <div className="flex items-center justify-center">
         <img src={logoImage} alt="Logo" className="h-16 w-auto mt-0 mb-3" />
       </div>
       <SearchInput />
-      <div className="divider px-3"></div>
+      <div className="divider border-t-2 border-lightOrange px-3"></div>
+      {/* <div className="divider px-3"></div> */}
       <Conversations />
       <LogoutButton />
     </div>
