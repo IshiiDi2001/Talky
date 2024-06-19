@@ -1,11 +1,11 @@
 import Conversations from "./Conversations";
 import LogoutButton from "./LogoutButton";
 import SearchInput from "./SearchInput";
-import logoImage from "./Logo.png";
+import logoImage from "../../assets/Logo.png";
 
 const Sidebar = () => {
   return (
-    <div className="border-r bg-white border-slate-500 p-4 flex flex-col">
+    <div className="border-r bg-white border-darkOrange p-4 flex flex-col">
       <div className="flex items-center justify-center">
         <img src={logoImage} alt="Logo" className="h-16 w-auto mt-0 mb-3" />
       </div>

@@ -10,12 +10,12 @@ const Login = () => {
         <form action="">
           <div>
             <label className="label p-2">
-              <span className="text-base text-black label-text">Username</span>
+              <span className="text-base  text-black label-text">Username</span>
             </label>
             <input
               type="text"
               placeholder="Enter Username"
-              className="w-full input input-bordered h-10"
+              className="w-full text-black input input-bordered bg-sky-500 placeholder-white h-10"
             />
           </div>
           <div>
@@ -25,7 +25,7 @@ const Login = () => {
             <input
               type="password"
               placeholder="Enter Password"
-              className="w-full input input-bordered h-10"
+              className="w-full text-black input input-bordered bg-sky-500 placeholder-white h-10"
             />
           </div>
 
@@ -37,7 +37,7 @@ const Login = () => {
           </Link>
 
           <div className="flex flex-col items-center">
-            <button className="btn btn-sm mt-2 border border-slate-700">
+            <button className="btn bg-white mt-3 text-darkOrange border border-darkOrange text-lg hover:bg-darkOrange hover:text-white hover:border-darkOrange ">
               Login
             </button>
           </div>

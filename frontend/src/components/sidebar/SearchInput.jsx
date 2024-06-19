@@ -7,11 +7,11 @@ const SearchInput = () => {
       <input
         type="text"
         placeholder="Search..."
-        className="input input-bordered rounded-full"
+        className="input bg-sky-500 input-bordered rounded-full placeholder-white"
       />
       <button
         type="submit"
-        className="btn btn-circle bg-lightOrange border border-none text-white"
+        className="btn btn-circle bg-darkOrange border border-none text-white hover:bg-lightOrange"
       >
         <IoSearchSharp className="w-6 h-6 outline-none" />
       </button>
