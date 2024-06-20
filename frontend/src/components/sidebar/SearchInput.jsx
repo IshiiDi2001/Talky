@@ -7,7 +7,7 @@ const SearchInput = () => {
       <input
         type="text"
         placeholder="Search..."
-        className="input bg-sky-500 input-bordered rounded-full placeholder-white"
+        className="input bg-sky-500 text-black input-bordered rounded-full placeholder-white"
       />
       <button
         type="submit"
