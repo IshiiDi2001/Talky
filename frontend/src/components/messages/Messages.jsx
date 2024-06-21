@@ -2,10 +2,13 @@ import React, { useEffect, useRef } from "react";
 import Message from "./Message";
 import useGetMessages from "../../hooks/useGetMessages";
 import MessageSkeleton from "../skeletons/MessageSkelton";
+import useConversation from "../../zustand/useConversation";
 
 const Messages = () => {
   const { messages, loading } = useGetMessages();
   const lastMessageRef = useRef();
+  const { selectedConversation } = useConversation();
+  const firstName = selectedConversation.fullName.split(" ")[0];
 
   useEffect(() => {
     setTimeout(() => {
@@ -32,7 +35,8 @@ const Messages = () => {
             className="mx-auto w-1/4"
           />
           <p className=" text-lightOrange text-lg">
-            Send a message to start the Conversation!
+            Say <span className="text-darkOrange">'Hello'</span> to start
+            conversation with <span className="text-sky-500">{firstName}!</span>
           </p>
         </div>
       )}
