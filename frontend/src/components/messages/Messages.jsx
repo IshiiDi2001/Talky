@@ -3,9 +3,11 @@ import Message from "./Message";
 import useGetMessages from "../../hooks/useGetMessages";
 import MessageSkeleton from "../skeletons/MessageSkelton";
 import useConversation from "../../zustand/useConversation";
+import useListenMessages from "../../hooks/useListenMessages";
 
 const Messages = () => {
   const { messages, loading } = useGetMessages();
+  useListenMessages();
   const lastMessageRef = useRef();
   const { selectedConversation } = useConversation();
   const firstName = selectedConversation.fullName.split(" ")[0];
