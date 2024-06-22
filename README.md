@@ -23,6 +23,8 @@ Talky is a robust and interactive real-time chat application built using the MER
 - **Notification Sound & Shaking New Message**: Audio notifications for new messages, with a shake effect for added attention.
   
 - **Online Status**: Displays online status of users.
+
+- **Responsive Design**: Fully responsive design to ensure a seamless experience on both desktop and mobile devices.
   
 - **Styling**: Tailwind CSS with DaisyUI for a clean and modern interface.
   
@@ -35,5 +37,6 @@ Talky is a robust and interactive real-time chat application built using the MER
 - **Database**: MongoDB, Mongoose
 - **Authentication**: JSON Web Tokens (JWT)JWT, bcryptjs
 - **Styling**: Tailwind CSS, DaisyUI
+- **Deployment**: Render.com
 
 
