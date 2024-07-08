@@ -9,7 +9,7 @@ const Divider = () => {
 
 const Sidebar = () => {
   return (
-    <div className="border-r bg-white border-darkOrange p-4 flex flex-col">
+    <div className="hidden md:flex border-r bg-white border-darkOrange p-4 flex-col">
       <div className="flex items-center justify-center">
         <img src={logoImage} alt="Logo" className="h-16 w-auto mt-0 mb-3" />
       </div>

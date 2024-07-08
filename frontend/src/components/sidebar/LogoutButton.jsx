@@ -14,7 +14,6 @@ const LogoutButton = () => {
       ) : (
         <span className="loading loading-spinner"></span>
       )}
-      <p className="text-lightOrange cursor-pointer">Sign Out</p>
     </div>
   );
 };
